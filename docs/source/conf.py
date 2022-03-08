@@ -17,7 +17,10 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'autoapi.extension',
 ]
+
+autoapi_dirs = ['../../src/']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -29,7 +32,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-# html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
